@@ -1,0 +1,1843 @@
+eve_prot_name                                    "practice"
+eve_prot_creation_date                           "15-Apr-2019 15:17:29"
+eve_prot_describe                                "Robot stimuli"
+eve_prot_purpose                                 "Perception of shape stimuli"
+eve_prot_type                                    "Robot"
+eve_prot_exe_type                                "ProtPsychophysics"
+eve_prot_state_codes                             "eve_stim_id
+                                                 eve_stim_dur
+                                                 eve_stim_pattern_type
+                                                 eve_stim_pattern_num
+                                                 eve_beh_vis_fix_dur
+                                                 eve_beh_trial_spec_text"
+eve_prot_response_codes                          "eve_stim_name
+                                                 eve_beh_vis_correct_side
+                                                 eve_pos_revs_n1
+                                                 eve_ang_vel_n1
+                                                 eve_ang_vel_n2
+                                                 eve_ang_vel_n3
+                                                 eve_ang_vel_n4"
+eve_prot_response_titles                         7  "PatternName" "CorrectAnswer" "ConfusingAngle(Degree)" "ForwardVelocityFirstStim" "BackVelocityFirstStim" "ForwardVelocitySecondStim"
+                                                 "BackVelocitySecondStim"
+eve_exper_series                                 "hmp1601"
+eve_beh_prot_type                                "proprioception"
+eve_matlab_random_seed                           209933
+eve_sbf_file                                     "C:\Users\Somlab\Desktop\hmp1601\sbf_audio\hmp1601_AN_04152019_practice_20190415T151729.sbf"
+eve_sbf_m_file                                   "robot_createFingerManipulandumSbfFile.m"
+eve_stim_per_trial                               2
+eve_stimulator                                   "Robot"
+eve_beh_resp_device                              "keyboard"
+eve_beh_resp_feedback                            "no feedback"
+eve_trial_synchrony                              "synchronous"
+
+% +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% Trial 1
+eve_trial_beg                                    1
+eve_trial_num                                    1
+eve_stim_id                                      1
+eve_stim_name                                    "40-0.045<-->36-0.095"
+eve_beh_vis_correct_side                         1
+eve_pos_revs_n1                                  0
+eve_ang_vel_n1                                   0.045
+eve_ang_vel_n2                                   0.045
+eve_ang_vel_n3                                   0.095
+eve_ang_vel_n4                                   0.095
+
+% Pre Trial Action 1--------------------------------------------------------
+eve_pre_trial_action_beg                         1
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      1
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_pre_trial_action_end                         1
+
+% Stimulus 1--------------------------------------------------------
+eve_stim_beg                                     1
+
+% Rotation Motor Spec (First Stimulus-degrees->40)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.0533333333333333
+eve_ang_vel                                      0.045
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_stim_end                                     1
+
+% Action 1--------------------------------------------------------
+eve_action_beg                                   1
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      0.045
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_action_end                                   1
+
+% Stimulus 2--------------------------------------------------------
+eve_stim_beg                                     2
+
+% Rotation Motor Spec (NoReference-Second Stimulus-degrees->36with extension ->0 degree)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.048
+eve_ang_vel                                      0.095
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (Second Stimulus-degrees->36)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.048
+eve_ang_vel                                      0.095
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_stim_end                                     2
+
+% Post Trial Action 1--------------------------------------------------------
+eve_post_trial_action_beg                        1
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (NoReference-Back to HOME position from ->36with extension ->0 degree)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.048
+eve_ang_vel                                      0.095
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      0.095
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_post_trial_action_end                        1
+
+eve_trial_end                                    1
+
+% +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% Trial 2
+eve_trial_beg                                    2
+eve_trial_num                                    2
+eve_stim_id                                      2
+eve_stim_name                                    "36-0.02<-->40-0.095"
+eve_beh_vis_correct_side                         2
+eve_pos_revs_n1                                  0
+eve_ang_vel_n1                                   0.02
+eve_ang_vel_n2                                   0.02
+eve_ang_vel_n3                                   0.095
+eve_ang_vel_n4                                   0.095
+
+% Pre Trial Action 1--------------------------------------------------------
+eve_pre_trial_action_beg                         1
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      1
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_pre_trial_action_end                         1
+
+% Stimulus 1--------------------------------------------------------
+eve_stim_beg                                     1
+
+% Rotation Motor Spec (NoReference-First Stimulus-degrees->36with extension ->0 degree)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.048
+eve_ang_vel                                      0.02
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (First Stimulus-degrees->36)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.048
+eve_ang_vel                                      0.02
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_stim_end                                     1
+
+% Action 1--------------------------------------------------------
+eve_action_beg                                   1
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (NoReference-Back to HOME position from ->36with extension ->0 degree)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.048
+eve_ang_vel                                      0.02
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      0.02
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_action_end                                   1
+
+% Stimulus 2--------------------------------------------------------
+eve_stim_beg                                     2
+
+% Rotation Motor Spec (Second Stimulus-degrees->40)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.0533333333333333
+eve_ang_vel                                      0.095
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_stim_end                                     2
+
+% Post Trial Action 1--------------------------------------------------------
+eve_post_trial_action_beg                        1
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      0.095
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_post_trial_action_end                        1
+
+eve_trial_end                                    2
+
+% +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% Trial 3
+eve_trial_beg                                    3
+eve_trial_num                                    3
+eve_stim_id                                      3
+eve_stim_name                                    "40-0.02<-->32-0.07"
+eve_beh_vis_correct_side                         1
+eve_pos_revs_n1                                  0
+eve_ang_vel_n1                                   0.02
+eve_ang_vel_n2                                   0.02
+eve_ang_vel_n3                                   0.07
+eve_ang_vel_n4                                   0.07
+
+% Pre Trial Action 1--------------------------------------------------------
+eve_pre_trial_action_beg                         1
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      1
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_pre_trial_action_end                         1
+
+% Stimulus 1--------------------------------------------------------
+eve_stim_beg                                     1
+
+% Rotation Motor Spec (First Stimulus-degrees->40)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.0533333333333333
+eve_ang_vel                                      0.02
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_stim_end                                     1
+
+% Action 1--------------------------------------------------------
+eve_action_beg                                   1
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      0.02
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_action_end                                   1
+
+% Stimulus 2--------------------------------------------------------
+eve_stim_beg                                     2
+
+% Rotation Motor Spec (NoReference-Second Stimulus-degrees->32with extension ->0 degree)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.0426666666666667
+eve_ang_vel                                      0.07
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (Second Stimulus-degrees->32)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.0426666666666667
+eve_ang_vel                                      0.07
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_stim_end                                     2
+
+% Post Trial Action 1--------------------------------------------------------
+eve_post_trial_action_beg                        1
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (NoReference-Back to HOME position from ->32with extension ->0 degree)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.0426666666666667
+eve_ang_vel                                      0.07
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      0.07
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_post_trial_action_end                        1
+
+eve_trial_end                                    3
+
+% +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% Trial 4
+eve_trial_beg                                    4
+eve_trial_num                                    4
+eve_stim_id                                      4
+eve_stim_name                                    "48-0.095<-->40-0.045"
+eve_beh_vis_correct_side                         1
+eve_pos_revs_n1                                  0
+eve_ang_vel_n1                                   0.095
+eve_ang_vel_n2                                   0.095
+eve_ang_vel_n3                                   0.045
+eve_ang_vel_n4                                   0.045
+
+% Pre Trial Action 1--------------------------------------------------------
+eve_pre_trial_action_beg                         1
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      1
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_pre_trial_action_end                         1
+
+% Stimulus 1--------------------------------------------------------
+eve_stim_beg                                     1
+
+% Rotation Motor Spec (NoReference-First Stimulus-degrees->48with extension ->0 degree)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.064
+eve_ang_vel                                      0.095
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (First Stimulus-degrees->48)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.064
+eve_ang_vel                                      0.095
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_stim_end                                     1
+
+% Action 1--------------------------------------------------------
+eve_action_beg                                   1
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (NoReference-Back to HOME position from ->48with extension ->0 degree)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.064
+eve_ang_vel                                      0.095
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      0.095
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_action_end                                   1
+
+% Stimulus 2--------------------------------------------------------
+eve_stim_beg                                     2
+
+% Rotation Motor Spec (Second Stimulus-degrees->40)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.0533333333333333
+eve_ang_vel                                      0.045
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_stim_end                                     2
+
+% Post Trial Action 1--------------------------------------------------------
+eve_post_trial_action_beg                        1
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      0.045
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_post_trial_action_end                        1
+
+eve_trial_end                                    4
+
+% +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% Trial 5
+eve_trial_beg                                    5
+eve_trial_num                                    5
+eve_stim_id                                      5
+eve_stim_name                                    "40-0.045<-->26-0.07"
+eve_beh_vis_correct_side                         1
+eve_pos_revs_n1                                  0
+eve_ang_vel_n1                                   0.045
+eve_ang_vel_n2                                   0.045
+eve_ang_vel_n3                                   0.07
+eve_ang_vel_n4                                   0.07
+
+% Pre Trial Action 1--------------------------------------------------------
+eve_pre_trial_action_beg                         1
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      1
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_pre_trial_action_end                         1
+
+% Stimulus 1--------------------------------------------------------
+eve_stim_beg                                     1
+
+% Rotation Motor Spec (First Stimulus-degrees->40)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.0533333333333333
+eve_ang_vel                                      0.045
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_stim_end                                     1
+
+% Action 1--------------------------------------------------------
+eve_action_beg                                   1
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      0.045
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_action_end                                   1
+
+% Stimulus 2--------------------------------------------------------
+eve_stim_beg                                     2
+
+% Rotation Motor Spec (NoReference-Second Stimulus-degrees->26with extension ->0 degree)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.0346666666666667
+eve_ang_vel                                      0.07
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (Second Stimulus-degrees->26)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.0346666666666667
+eve_ang_vel                                      0.07
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_stim_end                                     2
+
+% Post Trial Action 1--------------------------------------------------------
+eve_post_trial_action_beg                        1
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (NoReference-Back to HOME position from ->26with extension ->0 degree)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.0346666666666667
+eve_ang_vel                                      0.07
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      0.07
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_post_trial_action_end                        1
+
+eve_trial_end                                    5
+
+% +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% Trial 6
+eve_trial_beg                                    6
+eve_trial_num                                    6
+eve_stim_id                                      6
+eve_stim_name                                    "44-0.045<-->40-0.095"
+eve_beh_vis_correct_side                         1
+eve_pos_revs_n1                                  0
+eve_ang_vel_n1                                   0.045
+eve_ang_vel_n2                                   0.045
+eve_ang_vel_n3                                   0.095
+eve_ang_vel_n4                                   0.095
+
+% Pre Trial Action 1--------------------------------------------------------
+eve_pre_trial_action_beg                         1
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      1
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_pre_trial_action_end                         1
+
+% Stimulus 1--------------------------------------------------------
+eve_stim_beg                                     1
+
+% Rotation Motor Spec (NoReference-First Stimulus-degrees->44with extension ->0 degree)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.0586666666666667
+eve_ang_vel                                      0.045
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (First Stimulus-degrees->44)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.0586666666666667
+eve_ang_vel                                      0.045
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_stim_end                                     1
+
+% Action 1--------------------------------------------------------
+eve_action_beg                                   1
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (NoReference-Back to HOME position from ->44with extension ->0 degree)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.0586666666666667
+eve_ang_vel                                      0.045
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      0.045
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_action_end                                   1
+
+% Stimulus 2--------------------------------------------------------
+eve_stim_beg                                     2
+
+% Rotation Motor Spec (Second Stimulus-degrees->40)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.0533333333333333
+eve_ang_vel                                      0.095
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_stim_end                                     2
+
+% Post Trial Action 1--------------------------------------------------------
+eve_post_trial_action_beg                        1
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      0.095
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_post_trial_action_end                        1
+
+eve_trial_end                                    6
+
+% +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% Trial 7
+eve_trial_beg                                    7
+eve_trial_num                                    7
+eve_stim_id                                      7
+eve_stim_name                                    "40-0.045<-->54-0.095"
+eve_beh_vis_correct_side                         2
+eve_pos_revs_n1                                  0
+eve_ang_vel_n1                                   0.045
+eve_ang_vel_n2                                   0.045
+eve_ang_vel_n3                                   0.095
+eve_ang_vel_n4                                   0.095
+
+% Pre Trial Action 1--------------------------------------------------------
+eve_pre_trial_action_beg                         1
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      1
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_pre_trial_action_end                         1
+
+% Stimulus 1--------------------------------------------------------
+eve_stim_beg                                     1
+
+% Rotation Motor Spec (First Stimulus-degrees->40)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.0533333333333333
+eve_ang_vel                                      0.045
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_stim_end                                     1
+
+% Action 1--------------------------------------------------------
+eve_action_beg                                   1
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      0.045
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_action_end                                   1
+
+% Stimulus 2--------------------------------------------------------
+eve_stim_beg                                     2
+
+% Rotation Motor Spec (NoReference-Second Stimulus-degrees->54with extension ->0 degree)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.072
+eve_ang_vel                                      0.095
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (Second Stimulus-degrees->54)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.072
+eve_ang_vel                                      0.095
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_stim_end                                     2
+
+% Post Trial Action 1--------------------------------------------------------
+eve_post_trial_action_beg                        1
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (NoReference-Back to HOME position from ->54with extension ->0 degree)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.072
+eve_ang_vel                                      0.095
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      0.095
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_post_trial_action_end                        1
+
+eve_trial_end                                    7
+
+% +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% Trial 8
+eve_trial_beg                                    8
+eve_trial_num                                    8
+eve_stim_id                                      8
+eve_stim_name                                    "40-0.095<-->26-0.045"
+eve_beh_vis_correct_side                         1
+eve_pos_revs_n1                                  0
+eve_ang_vel_n1                                   0.095
+eve_ang_vel_n2                                   0.095
+eve_ang_vel_n3                                   0.045
+eve_ang_vel_n4                                   0.045
+
+% Pre Trial Action 1--------------------------------------------------------
+eve_pre_trial_action_beg                         1
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      1
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_pre_trial_action_end                         1
+
+% Stimulus 1--------------------------------------------------------
+eve_stim_beg                                     1
+
+% Rotation Motor Spec (First Stimulus-degrees->40)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.0533333333333333
+eve_ang_vel                                      0.095
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_stim_end                                     1
+
+% Action 1--------------------------------------------------------
+eve_action_beg                                   1
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      0.095
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_action_end                                   1
+
+% Stimulus 2--------------------------------------------------------
+eve_stim_beg                                     2
+
+% Rotation Motor Spec (NoReference-Second Stimulus-degrees->26with extension ->0 degree)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.0346666666666667
+eve_ang_vel                                      0.045
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (Second Stimulus-degrees->26)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.0346666666666667
+eve_ang_vel                                      0.045
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_stim_end                                     2
+
+% Post Trial Action 1--------------------------------------------------------
+eve_post_trial_action_beg                        1
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (NoReference-Back to HOME position from ->26with extension ->0 degree)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.0346666666666667
+eve_ang_vel                                      0.045
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      0.045
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_post_trial_action_end                        1
+
+eve_trial_end                                    8
+
+% +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% Trial 9
+eve_trial_beg                                    9
+eve_trial_num                                    9
+eve_stim_id                                      9
+eve_stim_name                                    "44-0.02<-->40-0.07"
+eve_beh_vis_correct_side                         1
+eve_pos_revs_n1                                  0
+eve_ang_vel_n1                                   0.02
+eve_ang_vel_n2                                   0.02
+eve_ang_vel_n3                                   0.07
+eve_ang_vel_n4                                   0.07
+
+% Pre Trial Action 1--------------------------------------------------------
+eve_pre_trial_action_beg                         1
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      1
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_pre_trial_action_end                         1
+
+% Stimulus 1--------------------------------------------------------
+eve_stim_beg                                     1
+
+% Rotation Motor Spec (NoReference-First Stimulus-degrees->44with extension ->0 degree)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.0586666666666667
+eve_ang_vel                                      0.02
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (First Stimulus-degrees->44)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.0586666666666667
+eve_ang_vel                                      0.02
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_stim_end                                     1
+
+% Action 1--------------------------------------------------------
+eve_action_beg                                   1
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (NoReference-Back to HOME position from ->44with extension ->0 degree)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.0586666666666667
+eve_ang_vel                                      0.02
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      0.02
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_action_end                                   1
+
+% Stimulus 2--------------------------------------------------------
+eve_stim_beg                                     2
+
+% Rotation Motor Spec (Second Stimulus-degrees->40)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.0533333333333333
+eve_ang_vel                                      0.07
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_stim_end                                     2
+
+% Post Trial Action 1--------------------------------------------------------
+eve_post_trial_action_beg                        1
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      0.07
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_post_trial_action_end                        1
+
+eve_trial_end                                    9
+
+% +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% Trial 10
+eve_trial_beg                                    10
+eve_trial_num                                    10
+eve_stim_id                                      10
+eve_stim_name                                    "40-0.07<-->54-0.095"
+eve_beh_vis_correct_side                         2
+eve_pos_revs_n1                                  0
+eve_ang_vel_n1                                   0.07
+eve_ang_vel_n2                                   0.07
+eve_ang_vel_n3                                   0.095
+eve_ang_vel_n4                                   0.095
+
+% Pre Trial Action 1--------------------------------------------------------
+eve_pre_trial_action_beg                         1
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      1
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_pre_trial_action_end                         1
+
+% Stimulus 1--------------------------------------------------------
+eve_stim_beg                                     1
+
+% Rotation Motor Spec (First Stimulus-degrees->40)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.0533333333333333
+eve_ang_vel                                      0.07
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_stim_end                                     1
+
+% Action 1--------------------------------------------------------
+eve_action_beg                                   1
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      0.07
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_action_end                                   1
+
+% Stimulus 2--------------------------------------------------------
+eve_stim_beg                                     2
+
+% Rotation Motor Spec (NoReference-Second Stimulus-degrees->54with extension ->0 degree)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.072
+eve_ang_vel                                      0.095
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (Second Stimulus-degrees->54)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.072
+eve_ang_vel                                      0.095
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_stim_end                                     2
+
+% Post Trial Action 1--------------------------------------------------------
+eve_post_trial_action_beg                        1
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (NoReference-Back to HOME position from ->54with extension ->0 degree)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.072
+eve_ang_vel                                      0.095
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      0.095
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_post_trial_action_end                        1
+
+eve_trial_end                                    10
+
+% +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% Trial 11
+eve_trial_beg                                    11
+eve_trial_num                                    11
+eve_stim_id                                      11
+eve_stim_name                                    "32-0.095<-->40-0.045"
+eve_beh_vis_correct_side                         2
+eve_pos_revs_n1                                  0
+eve_ang_vel_n1                                   0.095
+eve_ang_vel_n2                                   0.095
+eve_ang_vel_n3                                   0.045
+eve_ang_vel_n4                                   0.045
+
+% Pre Trial Action 1--------------------------------------------------------
+eve_pre_trial_action_beg                         1
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      1
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_pre_trial_action_end                         1
+
+% Stimulus 1--------------------------------------------------------
+eve_stim_beg                                     1
+
+% Rotation Motor Spec (NoReference-First Stimulus-degrees->32with extension ->0 degree)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.0426666666666667
+eve_ang_vel                                      0.095
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (First Stimulus-degrees->32)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.0426666666666667
+eve_ang_vel                                      0.095
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_stim_end                                     1
+
+% Action 1--------------------------------------------------------
+eve_action_beg                                   1
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (NoReference-Back to HOME position from ->32with extension ->0 degree)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.0426666666666667
+eve_ang_vel                                      0.095
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      0.095
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_action_end                                   1
+
+% Stimulus 2--------------------------------------------------------
+eve_stim_beg                                     2
+
+% Rotation Motor Spec (Second Stimulus-degrees->40)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.0533333333333333
+eve_ang_vel                                      0.045
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_stim_end                                     2
+
+% Post Trial Action 1--------------------------------------------------------
+eve_post_trial_action_beg                        1
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      0.045
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_post_trial_action_end                        1
+
+eve_trial_end                                    11
+
+% +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% Trial 12
+eve_trial_beg                                    12
+eve_trial_num                                    12
+eve_stim_id                                      12
+eve_stim_name                                    "48-0.02<-->40-0.095"
+eve_beh_vis_correct_side                         1
+eve_pos_revs_n1                                  0
+eve_ang_vel_n1                                   0.02
+eve_ang_vel_n2                                   0.02
+eve_ang_vel_n3                                   0.095
+eve_ang_vel_n4                                   0.095
+
+% Pre Trial Action 1--------------------------------------------------------
+eve_pre_trial_action_beg                         1
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      1
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_pre_trial_action_end                         1
+
+% Stimulus 1--------------------------------------------------------
+eve_stim_beg                                     1
+
+% Rotation Motor Spec (NoReference-First Stimulus-degrees->48with extension ->0 degree)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.064
+eve_ang_vel                                      0.02
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (First Stimulus-degrees->48)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.064
+eve_ang_vel                                      0.02
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_stim_end                                     1
+
+% Action 1--------------------------------------------------------
+eve_action_beg                                   1
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (NoReference-Back to HOME position from ->48with extension ->0 degree)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.064
+eve_ang_vel                                      0.02
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      0.02
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_action_end                                   1
+
+% Stimulus 2--------------------------------------------------------
+eve_stim_beg                                     2
+
+% Rotation Motor Spec (Second Stimulus-degrees->40)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     -0.0533333333333333
+eve_ang_vel                                      0.095
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_stim_end                                     2
+
+% Post Trial Action 1--------------------------------------------------------
+eve_post_trial_action_beg                        1
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Motor Spec (Back to HOME position)
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_stimulator_analog_chan                       0
+eve_f2d_function                                 "Rotate Position"
+eve_stim_dur                                     -1
+eve_pos_revs                                     0
+eve_ang_vel                                      0.095
+eve_ang_acc                                      0.35
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+
+% Rotation Pause Motor
+eve_stimulator_spec_beg                          "Rotation SmartMotor"
+eve_channel_spec_beg                             "SmartMotor Voltage"
+eve_f2d_function                                 "Wait"
+eve_stim_dur                                     1
+eve_channel_spec_end                             "SmartMotor Voltage"
+eve_stimulator_spec_end                          "Rotation SmartMotor"
+eve_post_trial_action_end                        1
+
+eve_trial_end                                    12
